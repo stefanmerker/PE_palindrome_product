@@ -25,7 +25,7 @@ namespace PE_palindrome_product
             int b = Convert.ToInt32(set);
 
 
-            var produkte = new List<int> { };
+            List<int> produkte = new List<int> { };
 
             while (a > 0)
             {
