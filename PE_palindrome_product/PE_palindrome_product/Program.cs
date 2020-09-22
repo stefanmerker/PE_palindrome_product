@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace PE_palindrome_product
 {
@@ -23,9 +24,30 @@ namespace PE_palindrome_product
             int a = Convert.ToInt32(set);
             int b = Convert.ToInt32(set);
 
-            int product = a * b;
 
-            Console.WriteLine(a + " * " + b + " = " + product);
+            var produkte = new List<int> { };
+
+            while (a > 0)
+            {
+                while (b > 0)
+                {
+                    produkte.Add(a * b);
+                    b--;
+                }
+                a--;
+                b = a;
+            }
+
+            produkte.Sort();
+
+            foreach (var produkt in produkte)
+            {
+                Console.WriteLine("Produkt = " + produkt);
+            }
+
+
+
+
             Console.ReadKey();
         }
     }
