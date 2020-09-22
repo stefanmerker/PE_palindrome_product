@@ -38,7 +38,7 @@ namespace PE_palindrome_product
 
                     if (Palindrom(produkt))
                     {
-                        ergebnisse.Add(new Ergebnis() {a=a, b=b, produkt=produkt});
+                        ergebnisse.Add(new Ergebnis() {A=a, B=b, Produkt=produkt});
                         //Console.WriteLine("Palindrom gefunden: " + ergebnisse[ergebnisse.Count-1].a + " * " + ergebnisse[ergebnisse.Count-1].b + " = " + ergebnisse[ergebnisse.Count-1].produkt);
                     }else
                     {
@@ -54,13 +54,13 @@ namespace PE_palindrome_product
 
             ergebnisse.Reverse();
 
-            Console.WriteLine("größtes Palimdrom ist " + ergebnisse[0].produkt + " aus a = " + ergebnisse[0].a + " und b = " + ergebnisse[0].b);
+            Console.WriteLine("größtes Palimdrom ist " + ergebnisse[0].Produkt + " aus a = " + ergebnisse[0].A + " und b = " + ergebnisse[0].B);
 
             Console.ReadKey();
         }
         public static int CompareErgebnisse(Ergebnis er1, Ergebnis er2)
         {
-            return er1.produkt.CompareTo(er2.produkt);
+            return er1.Produkt.CompareTo(er2.Produkt);
         }
 
         static public bool Palindrom (int produkt)
@@ -87,9 +87,9 @@ namespace PE_palindrome_product
 
     public class Ergebnis
     {
-        public int produkt { get; set; }
-        public int a { get; set; }
-        public int b { get; set; }
+        public int Produkt { get; set; }
+        public int A { get; set; }
+        public int B { get; set; }
     }
 
 }
