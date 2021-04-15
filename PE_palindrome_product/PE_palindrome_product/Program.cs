@@ -2,7 +2,7 @@
 using System.IO;
 using System.Collections.Generic;
 
-// Projekt von Project Euler by Stefan Merker
+// Projekt von Project Euler by Stefan Merker (c)2021
 
 namespace PE_palindrome_product
 {
