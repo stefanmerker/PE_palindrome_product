@@ -2,6 +2,8 @@
 using System.IO;
 using System.Collections.Generic;
 
+// Projekt von Project Euler by Stefan Merker
+
 namespace PE_palindrome_product
 {
     class Program
